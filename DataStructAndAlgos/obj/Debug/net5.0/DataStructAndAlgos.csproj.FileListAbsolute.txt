@@ -5,7 +5,6 @@ D:\DataStructAndAlgos\DataStructAndAlgos\DataStructAndAlgos\bin\Debug\net5.0\Dat
 D:\DataStructAndAlgos\DataStructAndAlgos\DataStructAndAlgos\bin\Debug\net5.0\DataStructAndAlgos.dll
 D:\DataStructAndAlgos\DataStructAndAlgos\DataStructAndAlgos\bin\Debug\net5.0\ref\DataStructAndAlgos.dll
 D:\DataStructAndAlgos\DataStructAndAlgos\DataStructAndAlgos\bin\Debug\net5.0\DataStructAndAlgos.pdb
-D:\DataStructAndAlgos\DataStructAndAlgos\DataStructAndAlgos\obj\Debug\net5.0\DataStructAndAlgos.csproj.AssemblyReference.cache
 D:\DataStructAndAlgos\DataStructAndAlgos\DataStructAndAlgos\obj\Debug\net5.0\DataStructAndAlgos.GeneratedMSBuildEditorConfig.editorconfig
 D:\DataStructAndAlgos\DataStructAndAlgos\DataStructAndAlgos\obj\Debug\net5.0\DataStructAndAlgos.AssemblyInfoInputs.cache
 D:\DataStructAndAlgos\DataStructAndAlgos\DataStructAndAlgos\obj\Debug\net5.0\DataStructAndAlgos.AssemblyInfo.cs
