@@ -8,53 +8,49 @@ namespace DataStructAndAlgos.ArraysAndStrings
 {
     public class Palind_Permutation
     {
-        Boolean isPermitationOfPelindrom(string Phrase)
+        //Method 1
+        public bool canFormPalindrome(string str)
         {
-            int[] table = buildCharFrequencyTable(Phrase);
-            return checkMaxOneOdd(table);
-        }
-        //Check that no more that one Charactar has an odd Count.
-        Boolean checkMaxOneOdd(int[] table)
-        {
-            Boolean foundOdd = false;
-            foreach(int count in table)
+            str = str.ToLower();
+            // Create a count array and initialize all
+            // values as 0
+            int countOdd = 0;
+            int[] count = new int[256];
+            Array.Fill(count, 0);
+
+            foreach (char c in str.ToCharArray())
             {
-                if(count % 2 == 1)
+                double x = getCharNumber(c);
+                if(x != -1)
                 {
-                    if (foundOdd)
+                  int  unicodeInt = Convert.ToInt32(x);
+                    count[unicodeInt]++;
+                    if(count[unicodeInt] % 2 == 1)
                     {
-                        return false;
+                        countOdd++;
                     }
-                    foundOdd = true;
+                    else
+                    {
+                        countOdd--;
+                    }
                 }
             }
-            return true;
-        }
-        //Map each character to a numbe , a-> 0, b -> 1, c-> 2 etc.
-        // This is case insensitive. Non -letter characters map to -1.
-        double getCharNumbers(char c)
-        {
-            double a = Char.GetNumericValue('a');
-            double z = Char.GetNumericValue('z');
-            double A = Char.GetNumericValue('A');
-            double Z = Char.GetNumericValue('Z');
 
-            double val = Char.GetNumericValue(c);
-            if (a <= val && val <= z)
-            {
-                return val - a;
-            }
-            else if (A <= val && val <= Z)
-            {
-                return val - Z;
-            }
-            return -1;
+            return countOdd <= 1;
         }
-        int[] buildCharFrequencyTable(string Phrase)
+
+        double getCharNumber(char c)
         {
-            double v = (Char.GetNumericValue('Z') - Char.GetNumericValue('a'));
-            double[] table = new double[v];
-            return null;
+            int unicodeInt = (int)c;
+           if (((unicodeInt > 65) && (unicodeInt < 90))
+                || ((unicodeInt > 97) && (unicodeInt < 122)))
+            {
+                return unicodeInt;
+            }
+            else
+            {
+                return -1;
+            }
         }
     }
 }

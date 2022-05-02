@@ -25,8 +25,13 @@ namespace DataStructAndAlgos
             //obj.permutation2("abcd", "badc");
 
             //1.3 URLify
-            Urilify objMeth = new Urilify();
-            objMeth.ReplaceSpace("Mr John Smith     ".ToCharArray(), "Mr John Smith     ".Trim().Length);
+            //Urilify objMeth = new Urilify();
+            //objMeth.ReplaceSpace("Mr John Smith     ".ToCharArray(), "Mr John Smith     ".Trim().Length);
+
+            //1.4  Permutation of a Palindrom
+            //Solution 1
+            Palind_Permutation Obj = new Palind_Permutation();
+            Obj.canFormPalindrome("Tact Coa");
         }
     }
 }

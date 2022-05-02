@@ -13,3 +13,4 @@ D:\DataStructAndAlgos\DataStructAndAlgos\DataStructAndAlgos\obj\Debug\net5.0\Dat
 D:\DataStructAndAlgos\DataStructAndAlgos\DataStructAndAlgos\obj\Debug\net5.0\ref\DataStructAndAlgos.dll
 D:\DataStructAndAlgos\DataStructAndAlgos\DataStructAndAlgos\obj\Debug\net5.0\DataStructAndAlgos.pdb
 D:\DataStructAndAlgos\DataStructAndAlgos\DataStructAndAlgos\obj\Debug\net5.0\DataStructAndAlgos.genruntimeconfig.cache
+D:\DataStructAndAlgos\DataStructAndAlgos\DataStructAndAlgos\obj\Debug\net5.0\DataStructAndAlgos.csproj.AssemblyReference.cache
