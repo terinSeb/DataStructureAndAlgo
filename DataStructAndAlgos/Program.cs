@@ -31,7 +31,11 @@ namespace DataStructAndAlgos
             //1.4  Permutation of a Palindrom
             //Solution 1
             Palind_Permutation Obj = new Palind_Permutation();
-            Obj.canFormPalindrome("Tact Coa");
+            //Obj.canFormPalindrome("Tact Coa");
+            //Solution 2            
+            bool result = Obj.isPermutationOfPelindrom("Tact Coa");
+         
+            Console.WriteLine(result);
         }
     }
 }

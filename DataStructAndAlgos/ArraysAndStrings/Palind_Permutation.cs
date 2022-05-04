@@ -52,5 +52,42 @@ namespace DataStructAndAlgos.ArraysAndStrings
                 return -1;
             }
         }
+
+        //-------------------------------- Method2  -Using Bitwise Operator --------------------------
+        int toogle(int bitvector, double index)
+        {
+            if (index < 0) return bitvector;
+
+            int mask = 1 << Convert.ToInt32(index);
+            if((bitvector & mask) == 0)
+            {
+                bitvector |= mask;
+            }
+            else
+            {
+                bitvector &= ~mask;
+            }
+            return bitvector;
+        }
+
+        bool CheckExactlyOneBitSet(int bitVector)
+        {
+            return (bitVector & (bitVector - 1)) == 0;
+        }
+        int CreateBitVector(string phrase)
+        {
+            int bitVector = 0;
+            foreach(char c in phrase.ToCharArray())
+            {
+                double x = getCharNumber(c);
+                bitVector = toogle(bitVector, x);
+            }
+            return bitVector;
+        }
+       public  bool isPermutationOfPelindrom(string Phrase)
+        {
+            int bitVector = CreateBitVector(Phrase);
+            return bitVector == 0 || CheckExactlyOneBitSet(bitVector);
+        }
     }
 }
